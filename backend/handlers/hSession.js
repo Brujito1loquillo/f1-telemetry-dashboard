@@ -4,7 +4,7 @@ const path = require("path");
 const sState = require("./../functions/sessionState");
 const sFile = require("./../functions/saveFile");
 
-module.exports = function hEvent (data) {
+module.exports = function hSession (data) {
     const uid = data.m_header.m_sessionUID.toString();
     if (sState.uid !== uid && uid > 0) {
         sState.currentFolder = path.join(__dirname, "..", "event", uid);
@@ -13,5 +13,5 @@ module.exports = function hEvent (data) {
     }
 
     sState.index++;
-    sFile("event", data);
+    sFile("session", data);
 }
