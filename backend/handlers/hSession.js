@@ -17,7 +17,7 @@ module.exports = async function hSession (data) {
 
     sState.index++;
 
-    if (cJSON("sessionExivition1_000007.json", data)) {
+    if (cJSON("sessionExivition1_000007", data)) {
         const sesiones = await sDB("select * from sesion where uid = ?", [data.m_header.m_sessionUID]);
         if (sesiones.length === 0) {
             const circuitos = await sDB("select * from circuito where id = ?", [data.m_trackId]);
