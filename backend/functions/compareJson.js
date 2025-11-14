@@ -4,7 +4,7 @@ const path = require("path");
 const sState = require("./sessionState");
 
 function compareEstructure (obj1, obj2) {
-    const log = path.join(__dirname, "..", log, "compareJson.log");
+    const log = path.join(__dirname, "..", "log", "compareJson.log");
     fs.appendFileSync(log, `Comparamos nuevos datos de ${sState.index}\n`, "utf8");
 
     // const array1 = Array.isArray(obj1);
