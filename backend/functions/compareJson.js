@@ -39,6 +39,6 @@ function compareEstructure (obj1, obj2) {
 }
 
 module.exports = function compareJson (file, obj2) {
-    const obj1 = JSON.parse(fs.readFileSync(`./../archive/${file}.json`, "utf8")).data;
+    const obj1 = JSON.parse(fs.readFileSync(`./archive/${file}.json`, "utf8")).data;
     return compareEstructure(obj1, obj2);
 }
