@@ -1,5 +1,5 @@
 .old-2025-11-14
-backend/event
+backend/event/*
 backend/events
 backend/node_modules
 docs
