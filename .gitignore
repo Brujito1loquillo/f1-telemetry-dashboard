@@ -1,6 +1,8 @@
+.old
 .old-2025-11-14
 backend/event/*
 backend/events
+backend/log
 backend/node_modules
 docs
 node_modules
