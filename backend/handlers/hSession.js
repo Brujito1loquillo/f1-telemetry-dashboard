@@ -22,10 +22,24 @@ module.exports = async function hSession (data) {
         if (sesiones.length === 0) {
             const circuitos = await sDB("select * from circuito where id = ?", [data.m_trackId]);
             if (circuitos.length === 0) {
-                await sDB("insert into circuito (id, longitud, velocidadPitLine) values (?, ?, ?)", [data.m_trackId, data.m_trackLength, data.m_pitSpeedLimit]);
+                try {
+                    await sDB("insert into circuito (id, longitud, velocidadPitLine) values (?, ?, ?)", [data.m_trackId, data.m_trackLength, data.m_pitSpeedLimit]);
+                } catch (errCircuito) {
+                    if (errCircuito.code !== "ER_DUP_ENTRY") {
+                        console.error("Error en la insercion de circuito y no es por duplicidad.");
+                        throw errCircuito;
+                    }
+                }
             }
 
-            await sDB("insert into sesion (uid, tipo, circuitoId, cocheJugadorId) values (?, ?, ?, ?)", [data.m_header.m_sessionUID, data.m_sessionType, data.m_trackId, data.m_header.m_playerCarIndex]);
+            try {
+                await sDB("insert into sesion (uid, tipo, circuitoId, cocheJugadorId) values (?, ?, ?, ?)", [data.m_header.m_sessionUID, data.m_sessionType, data.m_trackId, data.m_header.m_playerCarIndex]);
+            } catch (errSesion) {
+                if (errSesion.code !== "ER_DUP_ENTRY") {
+                    console.error("Error en la insercion de sesion y no es por duplicidad.");
+                    throw errSesion;
+                }
+            }
         }
 
         sFile("DB - session", data);
