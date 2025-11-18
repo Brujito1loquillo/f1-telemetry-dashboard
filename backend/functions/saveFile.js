@@ -6,7 +6,8 @@ const sState = require("./../functions/sessionState");
 
 module.exports = function saveFile (evName, data) {
     // Directorio
-    const dir = sState.currentFolder;
+    // const dir = sState.currentFolder;
+    const dir = path.join(sState.currentFolder, evName);
     if (!fs.existsSync(dir)) fs.mkdirSync(dir, {recursive: true});
 
     // Fichero
