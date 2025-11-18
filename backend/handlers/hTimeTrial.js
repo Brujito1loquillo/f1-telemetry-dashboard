@@ -17,7 +17,7 @@ module.exports = async function hTimeTrial (data) {
 
     sState.index++;
 
-    if (cJson("timeTrialTimeTrial1_000007", data)) {
+    if (cJSON("timeTrialTimeTrial1_000007", data)) {
         const sBest = data.m_playerSessionBestDataSet;
         const pBest = data.m_personalBestDataSet;
         const rBest = data.m_rivalDataSet;
@@ -56,18 +56,22 @@ module.exports = async function hTimeTrial (data) {
                 }
             }
         }
-         
+        
         const rCar = (rBest.m_equalCarPerformance === 0) ? rBest.m_teamId : 1000;
-        const equipos3 = await sDB("select id from equipo where id = ?", [rCar]);
-        if (equipos3.length === 0) {
-            try {
-                await sDB("insert into equipo (id) values (?)", [rCar]);
-            } catch (errEquipos3) {
-                if (errEquipos3.code !== "ER_DUP_ENTRY") {
-                    console.error("Error en la insercion de circuito y no es por duplicidad.");
-                    throw errEquipos3;
+        if (rBest.m_lapTimeInMS !== 0) {
+            const equipos3 = await sDB("select id from equipo where id = ?", [rCar]);
+            if (equipos3.length === 0) {
+                try {
+                    await sDB("insert into equipo (id) values (?)", [rCar]);
+                } catch (errEquipos3) {
+                    if (errEquipos3.code !== "ER_DUP_ENTRY") {
+                        console.error("Error en la insercion de circuito y no es por duplicidad.");
+                        throw errEquipos3;
+                    }
                 }
-            }
+            }    
+        } else {
+            // No hay rival
         }
 
         /* ************* *
