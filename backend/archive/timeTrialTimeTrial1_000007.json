@@ -1,0 +1,62 @@
+{
+  "timestamp": "2025-11-18T12:35:40.965Z",
+  "event": "timeTrial",
+  "data": {
+    "m_header": {
+      "m_packetFormat": 2025,
+      "m_gameYear": 25,
+      "m_gameMajorVersion": 1,
+      "m_gameMinorVersion": 15,
+      "m_packetVersion": 1,
+      "m_packetId": 14,
+      "m_sessionUID": "10581498052892338883",
+      "m_sessionTime": 0,
+      "m_frameIdentifier": 0,
+      "m_overallFrameIdentifier": 0,
+      "m_playerCarIndex": 0,
+      "m_secondaryPlayerCarIndex": 255
+    },
+    "m_playerSessionBestDataSet": {
+      "m_carIdx": 0,
+      "m_teamId": 9,
+      "m_lapTimeInMS": 0,
+      "m_sector1TimeInMS": 0,
+      "m_sector2TimeInMS": 0,
+      "m_sector3TimeInMS": 0,
+      "m_tractionControl": 1,
+      "m_gearboxAssist": 0,
+      "m_antiLockBrakes": 0,
+      "m_equalCarPerformance": 0,
+      "m_customSetup": 0,
+      "m_valid": 1
+    },
+    "m_personalBestDataSet": {
+      "m_carIdx": 1,
+      "m_teamId": 9,
+      "m_lapTimeInMS": 4101177600,
+      "m_sector1TimeInMS": 2710241280,
+      "m_sector2TimeInMS": 3832938496,
+      "m_sector3TimeInMS": 1869676544,
+      "m_tractionControl": 1,
+      "m_gearboxAssist": 1,
+      "m_antiLockBrakes": 1,
+      "m_equalCarPerformance": 0,
+      "m_customSetup": 0,
+      "m_valid": 1
+    },
+    "m_rivalDataSet": {
+      "m_carIdx": 0,
+      "m_teamId": 0,
+      "m_lapTimeInMS": 0,
+      "m_sector1TimeInMS": 0,
+      "m_sector2TimeInMS": 0,
+      "m_sector3TimeInMS": 0,
+      "m_tractionControl": 0,
+      "m_gearboxAssist": 0,
+      "m_antiLockBrakes": 0,
+      "m_equalCarPerformance": 0,
+      "m_customSetup": 0,
+      "m_valid": 0
+    }
+  }
+}

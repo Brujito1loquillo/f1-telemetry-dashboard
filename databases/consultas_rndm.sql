@@ -1,7 +1,9 @@
 show databases;
 use f1telemetria;
 show tables;
-
+/* **************************************** *
+ * RECOPILACION DE INFORMACION DE CIRCUITOS *
+ * **************************************** */
 update circuito set nombre = "Azerbayan", pais = "Azerbayan" where id = 20; -- pasar al fichero de creacion de la db
 -- delete from circuito where id = 17; -- long: 4323 pit: 80 --  Ni idea de que circuito es
 
@@ -18,10 +20,17 @@ update circuito set nombre = "Zamboort Inverso", pais = "Holanda" where id = 41;
 select * from circuito;
 
 select * from sesion;
--- Barein
-select circuitoId from sesion where circuitoId not in (
+-- 10 - Belgica ?
+-- 
+select circuitoId, uid from sesion where circuitoId not in (
 	2, 3, 4, 9, 11, 29, 31, 32, 40, 41
 ) and uid not in (
 	13230788898168738931,15929351939921892105,1678760252547137362,6778675355917430559,7037039976247099510,16255041336025846454,891231099412765074,206017810398958312,1864810291842021278,16509879377027740714,17445207283850056036,
-    12199349439267909203,4710681267069632524
+    12199349439267909203,4710681267069632524,14463937074756350810
 );
+
+/* ***************************************** *
+ * CONSULTAS PARA EL GUARDADO DE LAS VUELTAS *
+ * ***************************************** */
+ 
+ 
