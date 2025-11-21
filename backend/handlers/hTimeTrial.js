@@ -22,16 +22,27 @@ module.exports = async function hTimeTrial (data) {
         const pBest = data.m_personalBestDataSet;
         const rBest = data.m_rivalDataSet;
 
+        /*
         if (sBest.m_lapTimeInMS !== 0) {
             console.warn("Ya hay un mejor tiempo de la session");
         } else {
             console.log("Aun no hay mejor tiempo de session");
         }
+        */
 
         /* ******* *
          * EQUIPOS *
          * ******* */
-        const sCar = (sBest.m_equalCarPerformance === 0) ? sBest.m_teamId : 1000;
+        // const sCar = (sBest.m_equalCarPerformance === 0) ? sBest.m_teamId : 1000;
+        let sCar = 1400;
+        if (sBest.m_equalCarPerformance === 0) sCar = sBest.m_teamId;
+            // Si no usa rendimiento equivalente, es un equipo estandar
+        else if (sBest.m_equalCarPerformance === 1 && sBest.m_teamId < 10) sCar = 1200;
+            // Si usa rendimiento equivalente pero su teamId es de un equipo estandar
+                // Implementar 1xxn N=teamId
+        else if (sBest.m_equalCarPerformance === 1 && sBest.m_teamId >= 10) sCar = sBest.m_teamId;
+            // No es un equipo estandar pero usa rendimiento equivalente
+
         const equipos = await sDB("select id from equipo where id = ?", [sCar]);
         if (equipos.length === 0) {
             try {
