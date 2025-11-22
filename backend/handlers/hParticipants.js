@@ -22,6 +22,19 @@ module.exports = async function hParticipants (data) {
 
         for (i = 0; i < data.m_participants.length; i++) {
             const participant = data.m_participants[i];
+
+            const equipos = await sDB("select * from equipo where id = ?", [participant.m_teamId]);
+            if (equipos.length === 0) {
+                try {
+                    await sDB("insert into equipo (id) values (?)", [participant.m_teamId]);
+                } catch (errEquipo) {
+                    if (errEquipo.code !== "ER_DUP_ENTRY") {
+                        console.error("Error en la insercion de equipo y no es por duplicidad.");
+                        throw errEquipo;
+                    }
+                }
+            }
+
             const pilotos = await sDB("select * from piloto where nombre = ?", [participant.m_name]);
             if (pilotos.length === 0) {
                 try {
