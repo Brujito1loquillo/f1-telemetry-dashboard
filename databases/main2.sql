@@ -68,7 +68,8 @@ DROP TABLE IF EXISTS `f1telemetria`.`sesion` ;
 
 CREATE TABLE IF NOT EXISTS `f1telemetria`.`sesion` (
   `uid` VARCHAR(20) NOT NULL,
-  `tipo` INT NOT NULL COMMENT 'Time Trial : 18',
+  -- `tipo` INT NOT NULL COMMENT 'Time Trial : 18',
+  tipo int,
   `circuitoId` INT NOT NULL,
   -- `clima` INT NOT NULL COMMENT 'Despejado: 0\n\nOJO! Habria que controlar si cambia con una N:N',
   clima int default null,
