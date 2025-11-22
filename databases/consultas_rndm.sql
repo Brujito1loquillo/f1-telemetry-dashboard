@@ -84,6 +84,7 @@ update equipo set nombre = "APX GP" where id = 142;
 -- EL EQUIPO 255 ha aparecido al hacer el test en silverstone de F1 LA PAELICULA sUID: 13760912565783648145
 describe sesion;
 alter table sesion modify tipo int null;
+alter table sesion modify circuitoId int null;
 
 /* CONSULTAS RAPIDAS */
 -- select * from circuito;
@@ -101,6 +102,8 @@ select circuitoId, uid from sesion where circuitoId not in (
     12199349439267909203,4710681267069632524,14463937074756350810,10209459912444528057,14651950656740999228,13760912565783648145,4528472083073053233,6476286035685145569,8930011358685797355,10800285758750506205,4014983991911290662,
     7627437405711297536,8913332802210137238
 );
+select * from sesionParticipaPiloto;
+select * from piloto;
 
 /* ***************************************** *
  * CONSULTAS PARA EL GUARDADO DE LAS VUELTAS *
