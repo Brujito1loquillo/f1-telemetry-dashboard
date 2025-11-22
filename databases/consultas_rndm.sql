@@ -80,6 +80,8 @@ update equipo set nombre = "Campos 24" where id = 159;
 update equipo set nombre = "Trident 24" where id = 166;
 update equipo set nombre = "PHM -> AIX 24" where id = 161;
 insert into equipo values (129, "Konnersport");
+update equipo set nombre = "APX GP" where id = 142;
+-- EL EQUIPO 255 ha aparecido al hacer el test en silverstone de F1 LA PAELICULA sUID: 13760912565783648145
 
 /* CONSULTAS RAPIDAS */
 -- select * from circuito;

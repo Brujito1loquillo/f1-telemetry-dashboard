@@ -23,6 +23,27 @@ module.exports = async function hParticipants (data) {
         for (i = 0; i < data.m_participants.length; i++) {
             const participant = data.m_participants[i];
 
+            /*
+            uid	                varchar(20)	NO	PRI		
+            tipo	            int	        NO			
+            circuitoId	        int	        NO	MUL		
+            clima	            int	        YES			
+            cocheJugadorId	    int	        NO			
+            vueltasTotales	    int	        YES			
+            fecha	            timestamp	YES	CURRENT_TIMESTAMP	DEFAULT_GENERATED
+            */
+           const sesiones = await sDB("select * from sesion where uid = ?", [uid]);
+           if (sesiones.length === 0) {
+                try {
+                    await sDB("insert into sesion (uid, cocheJugadorId) values (?)", [uid, i]);
+                } catch (errSesion) {
+                    if (errSesion.code !== "ER_DUP_ENTRY") {
+                        console.error("Error en la insercion de sesion y no es por duplicidad.");
+                        throw errSesion;
+                    }
+                }
+            }
+
             const equipos = await sDB("select * from equipo where id = ?", [participant.m_teamId]);
             if (equipos.length === 0) {
                 try {
