@@ -1,0 +1,837 @@
+{
+  "timestamp": "2025-11-21T16:25:23.207Z",
+  "event": "participants",
+  "data": {
+    "m_header": {
+      "m_packetFormat": 2025,
+      "m_gameYear": 25,
+      "m_gameMajorVersion": 1,
+      "m_gameMinorVersion": 15,
+      "m_packetVersion": 1,
+      "m_packetId": 4,
+      "m_sessionUID": "502832324432949781",
+      "m_sessionTime": 0,
+      "m_frameIdentifier": 0,
+      "m_overallFrameIdentifier": 0,
+      "m_playerCarIndex": 21,
+      "m_secondaryPlayerCarIndex": 255
+    },
+    "m_numActiveCars": 22,
+    "m_participants": [
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 19,
+        "m_networkId": 255,
+        "m_teamId": 4,
+        "m_myTeam": 0,
+        "m_raceNumber": 18,
+        "m_nationality": 13,
+        "m_name": "STROLL",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 59,
+            "green": 144,
+            "blue": 139
+          },
+          {
+            "red": 249,
+            "green": 255,
+            "blue": 132
+          },
+          {
+            "red": 25,
+            "green": 25,
+            "blue": 25
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 94,
+        "m_networkId": 255,
+        "m_teamId": 2,
+        "m_myTeam": 0,
+        "m_raceNumber": 22,
+        "m_nationality": 43,
+        "m_name": "TSUNODA",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 43,
+            "green": 62,
+            "blue": 94
+          },
+          {
+            "red": 243,
+            "green": 44,
+            "blue": 33
+          },
+          {
+            "red": 253,
+            "green": 217,
+            "blue": 0
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 54,
+        "m_networkId": 255,
+        "m_teamId": 8,
+        "m_myTeam": 0,
+        "m_raceNumber": 4,
+        "m_nationality": 10,
+        "m_name": "NORRIS",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 255,
+            "green": 117,
+            "blue": 43
+          },
+          {
+            "red": 79,
+            "green": 79,
+            "blue": 79
+          },
+          {
+            "red": 46,
+            "green": 46,
+            "blue": 46
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 62,
+        "m_networkId": 255,
+        "m_teamId": 3,
+        "m_myTeam": 0,
+        "m_raceNumber": 23,
+        "m_nationality": 80,
+        "m_name": "ALBON",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 24,
+            "green": 104,
+            "blue": 216
+          },
+          {
+            "red": 0,
+            "green": 29,
+            "blue": 191
+          },
+          {
+            "red": 27,
+            "green": 27,
+            "blue": 101
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 7,
+        "m_networkId": 255,
+        "m_teamId": 1,
+        "m_myTeam": 0,
+        "m_raceNumber": 44,
+        "m_nationality": 10,
+        "m_name": "HAMILTON",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 225,
+            "green": 31,
+            "blue": 15
+          },
+          {
+            "red": 255,
+            "green": 236,
+            "blue": 64
+          },
+          {
+            "red": 46,
+            "green": 46,
+            "blue": 46
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 102,
+        "m_networkId": 255,
+        "m_teamId": 129,
+        "m_myTeam": 0,
+        "m_raceNumber": 89,
+        "m_nationality": 10,
+        "m_name": "JACKSON",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 4,
+        "m_liveryColours": [
+          {
+            "red": 85,
+            "green": 0,
+            "blue": 170
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 85
+          },
+          {
+            "red": 191,
+            "green": 196,
+            "blue": 38
+          },
+          {
+            "red": 255,
+            "green": 247,
+            "blue": 0
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 112,
+        "m_networkId": 255,
+        "m_teamId": 8,
+        "m_myTeam": 0,
+        "m_raceNumber": 81,
+        "m_nationality": 3,
+        "m_name": "PIASTRI",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 255,
+            "green": 117,
+            "blue": 43
+          },
+          {
+            "red": 79,
+            "green": 79,
+            "blue": 79
+          },
+          {
+            "red": 46,
+            "green": 46,
+            "blue": 46
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 59,
+        "m_networkId": 255,
+        "m_teamId": 5,
+        "m_myTeam": 0,
+        "m_raceNumber": 10,
+        "m_nationality": 28,
+        "m_name": "GASLY",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 0,
+            "green": 146,
+            "blue": 242
+          },
+          {
+            "red": 255,
+            "green": 170,
+            "blue": 234
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 161,
+        "m_networkId": 255,
+        "m_teamId": 9,
+        "m_myTeam": 0,
+        "m_raceNumber": 5,
+        "m_nationality": 9,
+        "m_name": "BORTOLETO",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 0,
+            "green": 231,
+            "blue": 1
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          },
+          {
+            "red": 46,
+            "green": 46,
+            "blue": 46
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 0,
+        "m_networkId": 255,
+        "m_teamId": 3,
+        "m_myTeam": 0,
+        "m_raceNumber": 55,
+        "m_nationality": 77,
+        "m_name": "SAINZ",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 24,
+            "green": 104,
+            "blue": 216
+          },
+          {
+            "red": 0,
+            "green": 29,
+            "blue": 191
+          },
+          {
+            "red": 27,
+            "green": 27,
+            "blue": 101
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 3,
+        "m_networkId": 255,
+        "m_teamId": 4,
+        "m_myTeam": 0,
+        "m_raceNumber": 14,
+        "m_nationality": 77,
+        "m_name": "ALONSO",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 59,
+            "green": 144,
+            "blue": 139
+          },
+          {
+            "red": 249,
+            "green": 255,
+            "blue": 132
+          },
+          {
+            "red": 25,
+            "green": 25,
+            "blue": 25
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 50,
+        "m_networkId": 255,
+        "m_teamId": 0,
+        "m_myTeam": 0,
+        "m_raceNumber": 63,
+        "m_nationality": 10,
+        "m_name": "RUSSELL",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 53,
+            "green": 210,
+            "blue": 215
+          },
+          {
+            "red": 233,
+            "green": 233,
+            "blue": 233
+          },
+          {
+            "red": 35,
+            "green": 35,
+            "blue": 35
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 17,
+        "m_networkId": 255,
+        "m_teamId": 7,
+        "m_myTeam": 0,
+        "m_raceNumber": 31,
+        "m_nationality": 28,
+        "m_name": "OCON",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 254,
+            "green": 55,
+            "blue": 33
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 149,
+        "m_networkId": 255,
+        "m_teamId": 6,
+        "m_myTeam": 0,
+        "m_raceNumber": 6,
+        "m_nationality": 28,
+        "m_name": "HADJAR",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 31,
+            "green": 35,
+            "blue": 180
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          },
+          {
+            "red": 46,
+            "green": 46,
+            "blue": 46
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 58,
+        "m_networkId": 255,
+        "m_teamId": 1,
+        "m_myTeam": 0,
+        "m_raceNumber": 16,
+        "m_nationality": 53,
+        "m_name": "LECLERC",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 225,
+            "green": 31,
+            "blue": 15
+          },
+          {
+            "red": 255,
+            "green": 236,
+            "blue": 64
+          },
+          {
+            "red": 46,
+            "green": 46,
+            "blue": 46
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 165,
+        "m_networkId": 255,
+        "m_teamId": 0,
+        "m_myTeam": 0,
+        "m_raceNumber": 12,
+        "m_nationality": 41,
+        "m_name": "ANTONELLI",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 53,
+            "green": 210,
+            "blue": 215
+          },
+          {
+            "red": 233,
+            "green": 233,
+            "blue": 233
+          },
+          {
+            "red": 35,
+            "green": 35,
+            "blue": 35
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 147,
+        "m_networkId": 255,
+        "m_teamId": 7,
+        "m_myTeam": 0,
+        "m_raceNumber": 87,
+        "m_nationality": 10,
+        "m_name": "BEARMAN",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 254,
+            "green": 55,
+            "blue": 33
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 162,
+        "m_networkId": 255,
+        "m_teamId": 5,
+        "m_myTeam": 0,
+        "m_raceNumber": 43,
+        "m_nationality": 2,
+        "m_name": "COLAPINTO",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 0,
+            "green": 146,
+            "blue": 242
+          },
+          {
+            "red": 255,
+            "green": 170,
+            "blue": 234
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 113,
+        "m_networkId": 255,
+        "m_teamId": 6,
+        "m_myTeam": 0,
+        "m_raceNumber": 30,
+        "m_nationality": 54,
+        "m_name": "LAWSON",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 31,
+            "green": 35,
+            "blue": 180
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          },
+          {
+            "red": 46,
+            "green": 46,
+            "blue": 46
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 10,
+        "m_networkId": 255,
+        "m_teamId": 9,
+        "m_myTeam": 0,
+        "m_raceNumber": 27,
+        "m_nationality": 29,
+        "m_name": "HULKENBERG",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 0,
+            "green": 231,
+            "blue": 1
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          },
+          {
+            "red": 46,
+            "green": 46,
+            "blue": 46
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 1,
+        "m_driverId": 9,
+        "m_networkId": 255,
+        "m_teamId": 2,
+        "m_myTeam": 0,
+        "m_raceNumber": 33,
+        "m_nationality": 22,
+        "m_name": "VERSTAPPEN",
+        "m_yourTelemetry": 1,
+        "m_showOnlineNames": 0,
+        "m_techLevel": 0,
+        "m_platform": 255,
+        "m_numColours": 3,
+        "m_liveryColours": [
+          {
+            "red": 43,
+            "green": 62,
+            "blue": 94
+          },
+          {
+            "red": 243,
+            "green": 44,
+            "blue": 33
+          },
+          {
+            "red": 253,
+            "green": 217,
+            "blue": 0
+          },
+          {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+          }
+        ]
+      },
+      {
+        "m_aiControlled": 0,
+        "m_driverId": 255,
+        "m_networkId": 0,
+        "m_teamId": 129,
+        "m_myTeam": 0,
+        "m_raceNumber": 40,
+        "m_nationality": 77,
+        "m_name": "Brujito1loquillo",
+        "m_yourTelemetry": 0,
+        "m_showOnlineNames": 1,
+        "m_techLevel": 0,
+        "m_platform": 1,
+        "m_numColours": 4,
+        "m_liveryColours": [
+          {
+            "red": 85,
+            "green": 0,
+            "blue": 170
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 85
+          },
+          {
+            "red": 191,
+            "green": 196,
+            "blue": 38
+          },
+          {
+            "red": 255,
+            "green": 247,
+            "blue": 0
+          }
+        ]
+      }
+    ]
+  }
+}
