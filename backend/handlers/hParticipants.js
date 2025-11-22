@@ -17,7 +17,7 @@ module.exports = async function hParticipants (data) {
 
     sState.index++;
 
-    if (cJSON("participantsSigleplayerGrandPrix1_000009", data)) {
+    if (cJSON("participantsSingleplayerGrandPrix1_000009", data)) {
         const playerCarIndex = data.m_header.m_playerCarIndex;
 
         for (i = 0; i < data.m_participants.length; i++) {
