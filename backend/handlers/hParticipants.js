@@ -35,7 +35,7 @@ module.exports = async function hParticipants (data) {
            const sesiones = await sDB("select * from sesion where uid = ?", [uid]);
            if (sesiones.length === 0) {
                 try {
-                    await sDB("insert into sesion (uid, cocheJugadorId) values (?)", [uid, i]);
+                    await sDB("insert into sesion (uid, cocheJugadorId) values (?, ?)", [uid, i]);
                 } catch (errSesion) {
                     if (errSesion.code !== "ER_DUP_ENTRY") {
                         console.error("Error en la insercion de sesion y no es por duplicidad.");
